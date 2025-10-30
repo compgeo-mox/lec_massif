@@ -45,7 +45,7 @@ $$
 
 ## How to Use
 
-- Open each notebook (`ex1.ipynb`, ..., `ex7.ipynb`) in Jupyter.
+- Open each notebook (`ex1.ipynb`, ..., `ex4.ipynb`) in Jupyter.
 - Run the cells sequentially to reproduce the results and visualizations.
 - Use ParaView to inspect the exported `.vtu` files.
 
