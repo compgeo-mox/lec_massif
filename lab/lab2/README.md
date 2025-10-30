@@ -1,4 +1,4 @@
-# Laboratory 8: Elasticity Equation
+# Laboratory 2: Elasticity Equation
 
 This lab focuses on the numerical solution of the elasticity equation using [PyGeoN](https://github.com/compgeo-mox/pygeon) and [PorePy](https://github.com/pmgbergen/porepy). The exercises cover both standard and mixed formulations, as well as the use of the MPSA method for elasticity. The main unknown is the displacement field $u$, and in the mixed case, also the stress $\sigma$ and rotation $r$.
 
