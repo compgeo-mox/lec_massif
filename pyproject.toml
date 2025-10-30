@@ -1,0 +1,61 @@
+# Configuration file inspired by PorePy
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Project information.
+[project]
+name = "lec_massif"
+version = "0.1.0"
+description = "Modeling And Simulation of Fault Stability in Subsurface Fluid Injection"
+readme = "Readme.md"
+license = { text = "GPL" }
+keywords = ["porous media"]
+maintainers = [
+    { name = "Anna Scotti", email = "anna.scotti@polimi.com" },
+    { name = "Alessio Fumagalli", email = "alessio.fumagalli@polimi.it" },
+]
+urls = { "Homepage" = "https://github.com/compgeo-mox/lec_massif" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "pygeon[development,testing] @ git+https://github.com/compgeo-mox/pygeon.git@main"
+]
+
+# Information for the build system.
+[tool.setuptools.packages.find]
+where = ["lab"]
+
+[tool.setuptools.package-data]
+"pygeon" = [
+    "py.typed",
+]
+
+# Testing.
+[tool.pytest.ini_options]
+python_files = "tests/*.py"
+addopts = "--cov=src/pygeon --cov-report term-missing -p no:warnings"
+
+# Static analysis.
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E501"]
+ignore = [
+    "E731",  # do not assign a lambda expression, use a def
+    "E266",  # too many leading '#' for block comment
+]
+exclude = [
+    "lab/lab0/*",
+]
+
+# MyPy
+[[tool.mypy.overrides]]
+module = "tests.*"
+disable_error_code = ["import-untyped"]
