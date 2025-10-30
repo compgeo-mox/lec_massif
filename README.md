@@ -23,8 +23,9 @@ The laboratory component is organized into a series of Jupyter notebooks, each f
 
 - **Lab 1**: Darcy's equation (flow in porous media, boundary conditions, discretization methods)
 - **Lab 2**: Linear elasticity (stress and displacement fields, constitutive relations)
-- **Lab 3**: Biot's poroelastic equations (coupled flow and deformation, fixed-strain and fixed-stress methods)
-- **Lab 4**: Fault stability analysis (contact mechanics, Coulomb failure criterion, slip tendency)
+- **Lab 3**: Biot's poroelastic equations (coupled flow and deformation)
+- **Lab 4**: Decoupling strategies for Biot's poroelastic equations (fixed-strain and fixed-stress methods)
+- **Lab 5**: Fault stability analysis (contact mechanics, Coulomb failure criterion, slip tendency)
 
 Each lab includes:
 
