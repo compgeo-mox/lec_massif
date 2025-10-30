@@ -1,4 +1,4 @@
-# Laboratory 3: Finite Volume Methods for the Darcy Equation
+# Laboratory 1: Finite Volume Methods for the Darcy Equation
 
 This lab explores the solution of the Darcy equation using finite volume methods with [PorePy](https://github.com/pmgbergen/porepy) and [PyGeoN](https://github.com/compgeo-mox/pygeon). The focus is on comparing the two-point flux approximation (TPFA) and multi-point flux approximation (MPFA) schemes on various grids and permeability fields.
 
